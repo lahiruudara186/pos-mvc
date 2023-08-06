@@ -91,6 +91,17 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="custDOBLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="custAddressLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="custDOBText" min="-2" pref="122" max="-2" attributes="0"/>
+                                          <Component id="custAddressText" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="custIdLabel" min="-2" max="-2" attributes="0"/>
@@ -104,20 +115,16 @@
                                           </Group>
                                       </Group>
                                       <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                                      <Component id="custNameLabel" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="custNameText" min="-2" pref="354" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="custDOBLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="custAddressLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="custNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="custSalaryLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="custDOBText" min="-2" pref="122" max="-2" attributes="0"/>
-                                          <Component id="custAddressText" pref="658" max="32767" attributes="0"/>
+                                          <Component id="custSalaryText" min="-2" pref="122" max="-2" attributes="0"/>
+                                          <Component id="custNameText" min="-2" pref="354" max="-2" attributes="0"/>
                                       </Group>
+                                      <EmptySpace min="0" pref="15" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
@@ -178,6 +185,10 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="custDOBLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="custDOBText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                              <Component id="custSalaryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="custSalaryText" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -231,6 +242,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="custNameText">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="custNameTextActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="custDOBLabel">
               <Properties>
@@ -238,6 +252,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="custDOBText">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="custDOBTextActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="custAddressLabel">
               <Properties>
@@ -296,6 +313,16 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Update Customer"/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="custSalaryLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Salary"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="custSalaryText">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="custSalaryTextActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
